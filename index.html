@@ -1,0 +1,61 @@
+<!--נועה כהן_209265974 אור אוחיון 213252802-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="work1.css">
+</head> 
+<body>
+<!--כותרת בדף-->
+    <header>
+        <h1><strong>Base Converter</strong></h1>
+        <p>Convert numbers between different bases (Binary, Decimal, Hex, Octal).</p>
+        <br>
+        <br>
+    </header>
+<!--שימוש במחשבון-->
+<main>
+    <form id="converter">
+      
+        <!--הבסיס שאותו נרצה להמיר-->  
+        <div id="container1">
+            <label>FROM</label>
+            <div class="base-buttons">
+                <button type="button" data-base="2">Binary (2)</button>
+                <button type="button" data-base="8">Octal (8)</button>
+                <button type="button" data-base="10">Decimal (10)</button>
+                <button type="button" data-base="16">Hexadecimal (16)</button>
+            </div>
+        </div>
+       
+        <section class="input-section">
+            <label for="number-input">Enter a number</label>
+            <input type="text" id="number-input" name="number">
+        </section>
+ 
+        <div id="container2">
+            <label>TO</label>
+            <div class="base-buttons-result">
+                <button type="button" data-base="2">Binary (2)</button>
+                <button type="button" data-base="8">Octal (8)</button>
+                <button type="button" data-base="10">Decimal (10)</button>
+                <button type="button" data-base="16">Hexadecimal (16)</button>
+            </div>
+        </div>
+        <section class="result-section">
+            <p class="result-text"><strong>Result:</strong> </p>
+        </section>
+        
+        <section class="convert-button-section">
+            <button type="submit" class="convert-button">Convert</button>
+        </section>
+
+
+        <script src="work1.js"></script>
+    </form>
+</main>
+</body>  
+</html>
